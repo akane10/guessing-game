@@ -10,8 +10,17 @@ fn main() {
     let secret_number = rand::thread_rng().gen_range(1, 100);
 
     // println!("the secret number is : {}", secret_number);
+    let mut l = 6;
 
     loop {
+        if l <= 1 {
+            println!("ppfttt you don't have life any more");
+            break;
+        }
+
+        l -= 1;
+
+        println!("remain life: {}", l);
         println!("Please input your guess");
 
         let mut guess = String::new();
